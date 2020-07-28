@@ -1,15 +1,15 @@
 Light_LingStandardService, conception notes
 ==============
-2020-07-27
+2020-07-27 -> 2020-07-28
 
 
 
-- [Light](#ling-standard-service-01)
+- [Ling Standard Service 01](#ling-standard-service-01)
 
 
 Ling Standard Service 01
 --------------
-2020-07-27
+2020-07-27 -> 2020-07-28
 
 
 This is a class which provides some extra-functionality to a [light service](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/light-service-container.md).
@@ -35,6 +35,8 @@ It's designed primarily for my personal use, but you can use too, it if it helps
 
 - it implements the [PluginInstallerInterface](https://github.com/lingtalfi/Light_PluginInstaller/blob/master/doc/api/Ling/Light_PluginInstaller/PluginInstaller/PluginInstallerInterface.md) , 
     to ease install process
+    
+- it implements the [logDebug method convention](https://github.com/lingtalfi/Light_DeveloperWizard/blob/master/doc/pages/conventions.md#logdebug-method)    
     
     
     

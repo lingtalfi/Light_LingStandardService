@@ -16,11 +16,15 @@ Table of contents
     - [LightLingStandardService01::isInstalled](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/isInstalled.md) &ndash; Returns whether the core install phase of the plugin is fully completed.
     - [LightLingStandardService01::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/uninstall.md) &ndash; Uninstalls the plugin.
     - [LightLingStandardService01::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/getDependencies.md) &ndash; Returns the array of dependencies.
+    - [LightLingStandardService01::logDebug](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/logDebug.md) &ndash; Sends a message to the debug log, only if the useDebug option is set to true.
 
 
 Dependencies
 ============
 - [Light](https://github.com/lingtalfi/Light)
+- [Light_Logger](https://github.com/lingtalfi/Light_Logger)
 - [Light_PluginInstaller](https://github.com/lingtalfi/Light_PluginInstaller)
+- [Light_UserDatabase](https://github.com/lingtalfi/Light_UserDatabase)
+- [UniverseTools](https://github.com/lingtalfi/UniverseTools)
 
 

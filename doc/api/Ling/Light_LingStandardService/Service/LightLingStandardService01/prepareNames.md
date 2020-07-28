@@ -2,12 +2,12 @@
 [Back to the Ling\Light_LingStandardService\Service\LightLingStandardService01 class](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01.md)
 
 
-LightLingStandardService01::__construct
+LightLingStandardService01::prepareNames
 ================
 
 
 
-LightLingStandardService01::__construct — Builds the LightLingStandardService01 instance.
+LightLingStandardService01::prepareNames — Prepare names used by this class.
 
 
 
@@ -16,12 +16,12 @@ Description
 ================
 
 
-public [LightLingStandardService01::__construct](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/__construct.md)() : void
+private [LightLingStandardService01::prepareNames](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/prepareNames.md)() : void
 
 
 
 
-Builds the LightLingStandardService01 instance.
+Prepare names used by this class.
 
 
 
@@ -46,7 +46,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightLingStandardService01::__construct](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardService01.php#L71-L75)
+See the source code for method [LightLingStandardService01::prepareNames](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardService01.php#L212-L231)
 
 
 See Also
@@ -54,5 +54,5 @@ See Also
 
 The [LightLingStandardService01](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01.md) class.
 
-Next method: [setContainer](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/setContainer.md)<br>
+Previous method: [error](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/error.md)<br>
 

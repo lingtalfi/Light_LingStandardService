@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.1.0 -- 2020-07-28
+
+    - update LightLingStandardService01, now really implements PluginInstallerInterface (first commit was a sketch), and fix doc
+    
 - 1.0.0 -- 2020-07-28
 
     - initial commit

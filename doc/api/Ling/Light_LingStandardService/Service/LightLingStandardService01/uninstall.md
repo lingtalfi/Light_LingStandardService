@@ -54,7 +54,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightLingStandardService01::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardService01.php#L87-L90)
+See the source code for method [LightLingStandardService01::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardService01.php#L143-L154)
 
 
 See Also
