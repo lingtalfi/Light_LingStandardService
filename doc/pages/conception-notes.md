@@ -14,12 +14,14 @@ Ling Standard Service 01
 
 This is a class which provides some extra-functionality to a [light service](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/light-service-container.md).
 
+See the [LightLingStandardService01 class documentation](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01.md) for more details.
+
 It's designed primarily for my personal use, but you can use too, it if it helps you.
 
 
 
 
-**Ling Standard Service 01** (aka lss01) is a [basic service](https://github.com/lingtalfi/Light_DeveloperWizard/blob/master/doc/pages/conventions.md#basic-service), but there is more to it:
+**Ling Standard Service 01** (aka lss01) provides the features of the [basic service](https://github.com/lingtalfi/Light_DeveloperWizard/blob/master/doc/pages/conventions.md#basic-service), but there is more to it:
 
 - instead of having all the methods in the child class, some methods are put on the parent (the **Light_LingStandardService01** class), to make the child more readable, and easier to add features to.
     So the container and options property are moved to the parent.
