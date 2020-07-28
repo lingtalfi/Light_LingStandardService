@@ -105,19 +105,22 @@ abstract class LightLingStandardService01 implements PluginInstallerInterface
      */
     public function install()
     {
-        $this->prepareNames();
-        /**
-         * @var $userDb LightUserDatabaseService
-         */
-        $userDb = $this->container->get('user_database');
-        $userDb->getFactory()->getPermissionApi()->insertPermissions([
-            [
-                'name' => $this->_pluginName . ".admin",
-            ],
-            [
-                'name' => $this->_pluginName . ".user",
-            ],
-        ]);
+        if (true === $this->container->has("user_database")) {
+
+            $this->prepareNames();
+            /**
+             * @var $userDb LightUserDatabaseService
+             */
+            $userDb = $this->container->get('user_database');
+            $userDb->getFactory()->getPermissionApi()->insertPermissions([
+                [
+                    'name' => $this->_pluginName . ".admin",
+                ],
+                [
+                    'name' => $this->_pluginName . ".user",
+                ],
+            ]);
+        }
     }
 
     /**
@@ -125,14 +128,17 @@ abstract class LightLingStandardService01 implements PluginInstallerInterface
      */
     public function isInstalled(): bool
     {
-        $this->prepareNames();
-        $permissionName = $this->_pluginName . ".admin";
-        /**
-         * @var $userDb LightUserDatabaseService
-         */
-        $userDb = $this->container->get('user_database');
-        if (null !== $userDb->getFactory()->getPermissionApi()->getPermissionIdByName($permissionName)) {
-            return true;
+        if (true === $this->container->has("user_database")) {
+
+            $this->prepareNames();
+            $permissionName = $this->_pluginName . ".admin";
+            /**
+             * @var $userDb LightUserDatabaseService
+             */
+            $userDb = $this->container->get('user_database');
+            if (null !== $userDb->getFactory()->getPermissionApi()->getPermissionIdByName($permissionName)) {
+                return true;
+            }
         }
         return false;
     }
@@ -142,15 +148,18 @@ abstract class LightLingStandardService01 implements PluginInstallerInterface
      */
     public function uninstall()
     {
-        $this->prepareNames();
-        /**
-         * @var $userDb LightUserDatabaseService
-         */
-        $userDb = $this->container->get('user_database');
-        $userDb->getFactory()->getPermissionApi()->deletePermissionByNames([
-            $this->_pluginName . ".admin",
-            $this->_pluginName . ".user",
-        ]);
+        if (true === $this->container->has("user_database")) {
+
+            $this->prepareNames();
+            /**
+             * @var $userDb LightUserDatabaseService
+             */
+            $userDb = $this->container->get('user_database');
+            $userDb->getFactory()->getPermissionApi()->deletePermissionByNames([
+                $this->_pluginName . ".admin",
+                $this->_pluginName . ".user",
+            ]);
+        }
     }
 
     /**
