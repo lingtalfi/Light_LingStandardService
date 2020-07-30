@@ -5,6 +5,7 @@ dependencies:
         - Light_PluginInstaller
         - Light_UserDatabase
         - UniverseTools
+        - SimplePdoWrapper
     
 
 post_install: 

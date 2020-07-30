@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.3.0 -- 2020-07-30
+
+    - add LightLingStandardServiceKitAdminPlugin class
+    
 - 1.2.2 -- 2020-07-30
 
     - update conception notes, fix typo

@@ -122,3 +122,6 @@ See the source code of [Ling\Light_LingStandardService\Service\LightLingStandard
 
 
 
+SeeAlso
+==============
+Previous class: [LightLingStandardServiceException](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Exception/LightLingStandardServiceException.md)<br>Next class: [LightLingStandardServiceKitAdminPlugin](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin.md)<br>
