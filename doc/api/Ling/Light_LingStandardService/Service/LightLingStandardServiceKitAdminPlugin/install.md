@@ -54,7 +54,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightLingStandardServiceKitAdminPlugin::install](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L98-L133)
+See the source code for method [LightLingStandardServiceKitAdminPlugin::install](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L99-L110)
 
 
 See Also

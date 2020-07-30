@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.4.0 -- 2020-07-30
+
+    - add LightLingStandardServiceHelper class
+    
 - 1.3.1 -- 2020-07-30
 
     - fix LightLingStandardServiceKitAdminPlugin not giving the user permission to the lka admin permission group

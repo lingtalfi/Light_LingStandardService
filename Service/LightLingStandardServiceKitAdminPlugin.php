@@ -6,6 +6,7 @@ namespace Ling\Light_LingStandardService\Service;
 
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_LingStandardService\Exception\LightLingStandardServiceException;
+use Ling\Light_LingStandardService\Helper\LightLingStandardServiceHelper;
 use Ling\Light_PluginInstaller\PluginInstaller\PluginInstallerInterface;
 use Ling\Light_UserDatabase\Service\LightUserDatabaseService;
 use Ling\SimplePdoWrapper\Util\Where;
@@ -104,31 +105,7 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
              * @var $userDb LightUserDatabaseService
              */
             $userDb = $this->container->get('user_database');
-            $basePluginName = $this->_basePluginName;
-
-
-            $permGroupApi = $userDb->getFactory()->getPermissionGroupApi();
-            $permApi = $userDb->getFactory()->getPermissionApi();
-            $groupAdminId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.admin", null, true);
-            $groupUserId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.user", null, true);
-            $adminId = $permApi->getPermissionIdByName("$basePluginName.admin", null, true);
-            $userId = $permApi->getPermissionIdByName("$basePluginName.user", null, true);
-
-
-            $userDb->getFactory()->getPermissionGroupHasPermissionApi()->insertPermissionGroupHasPermissions([
-                [
-                    'permission_group_id' => $groupAdminId,
-                    'permission_id' => $adminId,
-                ],
-                [
-                    'permission_group_id' => $groupUserId,
-                    'permission_id' => $adminId,
-                ],
-                [
-                    'permission_group_id' => $groupUserId,
-                    'permission_id' => $userId,
-                ],
-            ]);
+            LightLingStandardServiceHelper::bindStandardLightPermissionsToLkaPermissionGroups($userDb, $this->_basePluginName);
         }
     }
 

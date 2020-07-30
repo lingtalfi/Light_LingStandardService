@@ -54,4 +54,4 @@ See the source code of [Ling\Light_LingStandardService\Exception\LightLingStanda
 
 SeeAlso
 ==============
-Next class: [LightLingStandardService01](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01.md)<br>
+Next class: [LightLingStandardServiceHelper](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Helper/LightLingStandardServiceHelper.md)<br>
