@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.2.2 -- 2020-07-30
+
+    - update conception notes, fix typo
+    
 - 1.2.1 -- 2020-07-30
 
     - update conception notes
