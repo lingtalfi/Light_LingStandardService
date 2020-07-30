@@ -1,6 +1,6 @@
 Light_LingStandardService
 ===========
-2020-07-28
+2020-07-28 -> 2020-07-30
 
 
 
@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.2.1 -- 2020-07-30
+
+    - update conception notes
+    
 - 1.2.0 -- 2020-07-28
 
     - update LightLingStandardService01, now only install/uninstall if user_database service is available
