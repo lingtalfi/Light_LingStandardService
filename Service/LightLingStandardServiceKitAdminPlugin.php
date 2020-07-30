@@ -122,6 +122,10 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
                 ],
                 [
                     'permission_group_id' => $groupUserId,
+                    'permission_id' => $adminId,
+                ],
+                [
+                    'permission_group_id' => $groupUserId,
                     'permission_id' => $userId,
                 ],
             ]);
@@ -181,6 +185,7 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
 
 
             $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupAdminId, $adminId);
+            $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupUserId, $adminId);
             $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupUserId, $userId);
         }
     }
