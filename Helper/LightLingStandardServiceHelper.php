@@ -43,8 +43,8 @@ class LightLingStandardServiceHelper
                 'permission_id' => $adminId,
             ],
             [
-                'permission_group_id' => $groupUserId,
-                'permission_id' => $adminId,
+                'permission_group_id' => $groupAdminId,
+                'permission_id' => $userId,
             ],
             [
                 'permission_group_id' => $groupUserId,

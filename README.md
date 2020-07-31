@@ -1,6 +1,6 @@
 Light_LingStandardService
 ===========
-2020-07-28 -> 2020-07-30
+2020-07-28 -> 2020-07-31
 
 
 
@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.5.0 -- 2020-07-31
+
+    - fix LightLingStandardServiceKitAdminPlugin install/uninstall procedure adding/removing wrong permission bindings
+    
 - 1.4.0 -- 2020-07-30
 
     - add LightLingStandardServiceHelper class

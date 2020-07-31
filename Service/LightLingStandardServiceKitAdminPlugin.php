@@ -155,15 +155,27 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
 
             $permGroupApi = $userDb->getFactory()->getPermissionGroupApi();
             $permApi = $userDb->getFactory()->getPermissionApi();
-            $groupAdminId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.admin", null, true);
-            $groupUserId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.user", null, true);
-            $adminId = $permApi->getPermissionIdByName("$basePluginName.admin", null, true);
-            $userId = $permApi->getPermissionIdByName("$basePluginName.user", null, true);
+            $groupAdminId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.admin");
+            $adminId = $permApi->getPermissionIdByName("$basePluginName.admin");
+            $groupUserId = $permGroupApi->getPermissionGroupIdByName("Light_Kit_Admin.user");
+            $userId = $permApi->getPermissionIdByName("$basePluginName.user");
 
 
-            $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupAdminId, $adminId);
-            $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupUserId, $adminId);
-            $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupUserId, $userId);
+            if (null !== $groupAdminId) {
+                if (null !== $adminId) {
+                    $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupAdminId, $adminId);
+                }
+                if (null !== $userId) {
+                    $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupAdminId, $userId);
+                }
+            }
+
+            if (null !== $groupUserId) {
+                if (null !== $userId) {
+                    $userDb->getFactory()->getPermissionGroupHasPermissionApi()->deletePermissionGroupHasPermissionByPermissionGroupIdAndPermissionId($groupUserId, $userId);
+                }
+            }
+
         }
     }
 
@@ -205,16 +217,17 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
             $className = get_class($this);
             $this->_className = $className;
             $p = explode('\\', $className);
+            $galaxy = array_shift($p);
+            $planet = array_shift($p);
+
+            $q = explode('_', $planet);
+
             if (
-                count($p) > 3 &&
-                'Light' === $p[0] &&
-                'Kit' === $p[1] &&
-                'Admin' === $p[2]
+                count($q) > 3 &&
+                'Light' === $q[0] &&
+                'Kit' === $q[1] &&
+                'Admin' === $q[2]
             ) {
-
-
-                $galaxy = array_shift($p);
-                $planet = array_shift($p);
                 $tightPlanetName = PlanetTool::getTightPlanetName($planet);
                 $this->_exceptionClassName = implode('\\', [
                     $galaxy,

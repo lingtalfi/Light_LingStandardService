@@ -49,7 +49,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightLingStandardServiceKitAdminPlugin::error](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L188-L192)
+See the source code for method [LightLingStandardServiceKitAdminPlugin::error](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L200-L204)
 
 
 See Also

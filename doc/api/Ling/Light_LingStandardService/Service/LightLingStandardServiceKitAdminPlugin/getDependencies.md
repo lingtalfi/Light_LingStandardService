@@ -48,7 +48,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [LightLingStandardServiceKitAdminPlugin::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L173-L176)
+See the source code for method [LightLingStandardServiceKitAdminPlugin::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/Service/LightLingStandardServiceKitAdminPlugin.php#L185-L188)
 
 
 See Also
