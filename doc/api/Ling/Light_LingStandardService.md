@@ -20,15 +20,6 @@ Table of contents
     - [LightLingStandardService01::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/uninstall.md) &ndash; Uninstalls the plugin.
     - [LightLingStandardService01::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/getDependencies.md) &ndash; Returns the array of dependencies.
     - [LightLingStandardService01::logDebug](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/logDebug.md) &ndash; Sends a message to the debug log, only if the useDebug option is set to true.
-- [LightLingStandardServiceKitAdminPlugin](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin.md) &ndash; The LightLingStandardServiceKitAdminPlugin class.
-    - [LightLingStandardServiceKitAdminPlugin::__construct](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/__construct.md) &ndash; Builds the LightLingStandardService01 instance.
-    - [LightLingStandardServiceKitAdminPlugin::setContainer](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/setContainer.md) &ndash; Sets the container.
-    - [LightLingStandardServiceKitAdminPlugin::setOptions](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/setOptions.md) &ndash; Sets the options.
-    - [LightLingStandardServiceKitAdminPlugin::install](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/install.md) &ndash; Installs the plugin in the light application.
-    - [LightLingStandardServiceKitAdminPlugin::isInstalled](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/isInstalled.md) &ndash; Returns whether the core install phase of the plugin is fully completed.
-    - [LightLingStandardServiceKitAdminPlugin::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/uninstall.md) &ndash; Uninstalls the plugin.
-    - [LightLingStandardServiceKitAdminPlugin::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/getDependencies.md) &ndash; Returns the array of dependencies.
-    - [LightLingStandardServiceKitAdminPlugin::registerByRequestId](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/registerByRequestId.md) &ndash; Registers the plugin dynamically to [the realist plugin](https://github.com/lingtalfi/Light_Realist/).
 
 
 Dependencies
@@ -38,8 +29,5 @@ Dependencies
 - [Light_Logger](https://github.com/lingtalfi/Light_Logger)
 - [Light_PluginInstaller](https://github.com/lingtalfi/Light_PluginInstaller)
 - [UniverseTools](https://github.com/lingtalfi/UniverseTools)
-- [Light_Kit_Admin](https://github.com/lingtalfi/Light_Kit_Admin)
-- [Light_Realist](https://github.com/lingtalfi/Light_Realist)
-- [SimplePdoWrapper](https://github.com/lingtalfi/SimplePdoWrapper)
 
 

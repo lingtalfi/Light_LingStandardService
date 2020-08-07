@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.6.1 -- 2020-08-07
+
+    - moved "Ling Standard Service Kit Admin Plugin" to lka
+    
 - 1.6.0 -- 2020-08-07
 
     - update LightLingStandardServiceKitAdminPlugin, now implements LightRealistCustomServiceInterface
