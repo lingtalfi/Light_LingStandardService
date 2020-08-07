@@ -5,6 +5,8 @@ dependencies:
         - Light_Logger
         - Light_PluginInstaller
         - UniverseTools
+        - Light_Kit_Admin
+        - Light_Realist
         - SimplePdoWrapper
     
 

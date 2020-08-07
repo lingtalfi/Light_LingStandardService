@@ -4,10 +4,18 @@
 namespace Ling\Light_LingStandardService\Service;
 
 
+use Exception;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
+use Ling\Light_Kit_Admin\Realist\ActionHandler\LightKitAdminRealistActionHandler;
+use Ling\Light_Kit_Admin\Realist\ListActionHandler\LightKitAdminListActionHandler;
+use Ling\Light_Kit_Admin\Realist\ListGeneralActionHandler\LightKitAdminListGeneralActionHandler;
+use Ling\Light_Kit_Admin\Realist\Rendering\LightKitAdminRealistListRenderer;
+use Ling\Light_Kit_Admin\Realist\Rendering\LightKitAdminRealistRowsRenderer;
 use Ling\Light_LingStandardService\Exception\LightLingStandardServiceException;
 use Ling\Light_LingStandardService\Helper\LightLingStandardServiceHelper;
 use Ling\Light_PluginInstaller\PluginInstaller\PluginInstallerInterface;
+use Ling\Light_Realist\Service\LightRealistCustomServiceInterface;
+use Ling\Light_Realist\Service\LightRealistService;
 use Ling\Light_UserDatabase\Service\LightUserDatabaseService;
 use Ling\SimplePdoWrapper\Util\Where;
 use Ling\UniverseTools\PlanetTool;
@@ -15,7 +23,7 @@ use Ling\UniverseTools\PlanetTool;
 /**
  * The LightLingStandardServiceKitAdminPlugin class.
  */
-abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstallerInterface
+abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstallerInterface, LightRealistCustomServiceInterface
 {
 
     /**
@@ -91,7 +99,7 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
 
 
     //--------------------------------------------
-    //
+    // PluginInstallerInterface
     //--------------------------------------------
     /**
      * @implementation
@@ -188,6 +196,36 @@ abstract class LightLingStandardServiceKitAdminPlugin implements PluginInstaller
     }
 
 
+
+
+    //--------------------------------------------
+    // LightRealistCustomServiceInterface
+    //--------------------------------------------
+    /**
+     * Registers the plugin dynamically to @page(the realist plugin).
+     *
+     * This promotes @page(the late service registration design).
+     *
+     *
+     * @param string $requestId
+     * @return mixed|void
+     * @throws \Exception
+     */
+    public function registerByRequestId(string $requestId)
+    {
+
+        list($galaxy, $planet) = PlanetTool::getGalaxyPlanetByClassName(get_class($this));
+
+        /**
+         * @var $realist LightRealistService
+         */
+        $realist = $this->container->get("realist");
+        $realist->registerListRenderer($planet, new LightKitAdminRealistListRenderer());
+        $realist->registerRealistRowsRenderer($planet, new LightKitAdminRealistRowsRenderer());
+        $realist->registerActionHandler(new LightKitAdminRealistActionHandler());
+        $realist->registerListActionHandler($planet, new LightKitAdminListActionHandler());
+        $realist->registerListGeneralActionHandler($planet, new LightKitAdminListGeneralActionHandler());
+    }
 
     //--------------------------------------------
     //

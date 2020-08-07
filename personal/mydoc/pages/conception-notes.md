@@ -1,6 +1,6 @@
 Light_LingStandardService, conception notes
 ==============
-2020-07-27 -> 2020-07-30
+2020-07-27 -> 2020-08-07
 
 
 
@@ -47,7 +47,7 @@ It's designed primarily for my personal use, but you can use too, it if it helps
     
 Ling Standard Service Kit Admin Plugin
 --------------
-2020-07-30
+2020-07-30 - 2020-08-07
 
 
 This is an abstract class which provides some extra-functionality to a [light service](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/light-service-container.md).
@@ -55,8 +55,13 @@ This is an abstract class which provides some extra-functionality to a [light se
 It's designed for [light kit admin](https://github.com/lingtalfi/Light_Kit_Admin) plugin authors.
 
 
-What it basically does is implement the [plugin installer interface](https://github.com/lingtalfi/Light_PluginInstaller/blob/master/doc/api/Ling/Light_PluginInstaller/PluginInstaller/PluginInstallerInterface.md),
-and automatically adds some permission bindings, as described below.
+What it basically does is implement the following interfaces:
+
+- [plugin installer interface](https://github.com/lingtalfi/Light_PluginInstaller/blob/master/doc/api/Ling/Light_PluginInstaller/PluginInstaller/PluginInstallerInterface.md)
+- [realist custom service interface](https://github.com/lingtalfi/Light_Realist/blob/master/doc/api/Ling/Light_Realist/Service/LightRealistCustomServiceInterface.md)
+
+
+It also automatically adds some permission bindings, as described below.
 
 
 Before you can extend our class, you need to make sure that your lka class meet the conditions below. 

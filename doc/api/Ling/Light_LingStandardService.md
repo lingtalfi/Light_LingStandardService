@@ -1,6 +1,6 @@
 Ling/Light_LingStandardService
 ================
-2020-07-28 --> 2020-07-31
+2020-07-28 --> 2020-08-07
 
 
 
@@ -28,6 +28,7 @@ Table of contents
     - [LightLingStandardServiceKitAdminPlugin::isInstalled](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/isInstalled.md) &ndash; Returns whether the core install phase of the plugin is fully completed.
     - [LightLingStandardServiceKitAdminPlugin::uninstall](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/uninstall.md) &ndash; Uninstalls the plugin.
     - [LightLingStandardServiceKitAdminPlugin::getDependencies](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/getDependencies.md) &ndash; Returns the array of dependencies.
+    - [LightLingStandardServiceKitAdminPlugin::registerByRequestId](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardServiceKitAdminPlugin/registerByRequestId.md) &ndash; Registers the plugin dynamically to [the realist plugin](https://github.com/lingtalfi/Light_Realist/).
 
 
 Dependencies
@@ -37,6 +38,8 @@ Dependencies
 - [Light_Logger](https://github.com/lingtalfi/Light_Logger)
 - [Light_PluginInstaller](https://github.com/lingtalfi/Light_PluginInstaller)
 - [UniverseTools](https://github.com/lingtalfi/UniverseTools)
+- [Light_Kit_Admin](https://github.com/lingtalfi/Light_Kit_Admin)
+- [Light_Realist](https://github.com/lingtalfi/Light_Realist)
 - [SimplePdoWrapper](https://github.com/lingtalfi/SimplePdoWrapper)
 
 
