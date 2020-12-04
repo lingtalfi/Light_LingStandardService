@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.6.2 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.6.1 -- 2020-08-07
 
     - moved "Ling Standard Service Kit Admin Plugin" to lka
