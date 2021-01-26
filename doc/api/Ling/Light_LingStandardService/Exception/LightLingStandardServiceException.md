@@ -4,7 +4,7 @@
 
 The LightLingStandardServiceException class
 ================
-2020-07-28 --> 2020-12-08
+2020-07-28 --> 2021-01-26
 
 
 

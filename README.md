@@ -1,6 +1,6 @@
 Light_LingStandardService
 ===========
-2020-07-28 -> 2020-08-07
+2020-07-28 -> 2021-01-26
 
 
 
@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.6.4 -- 2021-01-26
+
+    - add LightLingStandardService02 class
+  
 - 1.6.3 -- 2020-12-08
 
     - Fix lpi-deps not using natsort.
