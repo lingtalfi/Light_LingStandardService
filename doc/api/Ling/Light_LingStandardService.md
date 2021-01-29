@@ -1,6 +1,6 @@
 Ling/Light_LingStandardService
 ================
-2020-07-28 --> 2021-01-26
+2020-07-28 --> 2021-01-29
 
 
 
@@ -9,8 +9,6 @@ Table of contents
 ===========
 
 - [LightLingStandardServiceException](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Exception/LightLingStandardServiceException.md) &ndash; The LightLingStandardServiceException class.
-- [LightLingStandardServiceHelper](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Helper/LightLingStandardServiceHelper.md) &ndash; The LightLingStandardServiceHelper class.
-    - [LightLingStandardServiceHelper::bindStandardLightPermissionsToLkaPermissionGroups](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Helper/LightLingStandardServiceHelper/bindStandardLightPermissionsToLkaPermissionGroups.md) &ndash; Binds the permissions of the given basePluginName to the main lka permission groups.
 - [LightLingStandardService01](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01.md) &ndash; The LightLingStandardService01 class.
     - [LightLingStandardService01::__construct](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/__construct.md) &ndash; Builds the LightLingStandardService01 instance.
     - [LightLingStandardService01::setContainer](https://github.com/lingtalfi/Light_LingStandardService/blob/master/doc/api/Ling/Light_LingStandardService/Service/LightLingStandardService01/setContainer.md) &ndash; Sets the container.
@@ -29,10 +27,10 @@ Table of contents
 
 Dependencies
 ============
-- [Light_UserDatabase](https://github.com/lingtalfi/Light_UserDatabase)
 - [Light](https://github.com/lingtalfi/Light)
 - [Light_Logger](https://github.com/lingtalfi/Light_Logger)
 - [Light_PluginInstaller](https://github.com/lingtalfi/Light_PluginInstaller)
+- [Light_UserDatabase](https://github.com/lingtalfi/Light_UserDatabase)
 - [UniverseTools](https://github.com/lingtalfi/UniverseTools)
 
 

@@ -1,6 +1,6 @@
 Light_LingStandardService
 ===========
-2020-07-28 -> 2021-01-26
+2020-07-28 -> 2021-01-29
 
 
 
@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.6.5 -- 2021-01-29
+
+    - remove LightLingStandardServiceHelper class
+  
 - 1.6.4 -- 2021-01-26
 
     - add LightLingStandardService02 class
