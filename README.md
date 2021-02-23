@@ -39,6 +39,14 @@ Summary
 History Log
 =============
 
+- 1.6.7 -- 2021-02-23
+
+    - Update dependencies (pushed by SubscribersUtil)
+
+- 1.6.6 -- 2021-02-23
+
+    - Update dependencies (pushed by SubscribersUtil)
+
 - 1.6.6 -- 2021-02-23
 
     - Update dependencies
