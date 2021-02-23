@@ -39,6 +39,10 @@ Summary
 History Log
 =============
 
+- 1.6.6 -- 2021-02-23
+
+    - Update dependencies
+
 - 1.6.5 -- 2021-01-29
 
     - remove LightLingStandardServiceHelper class
