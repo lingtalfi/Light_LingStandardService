@@ -116,3 +116,10 @@
     - Ling:Light_PluginInstaller:2.0.14+
     - Ling:Light_UserDatabase:1.31.12+
     - Ling:UniverseTools:1.22.26+
+
+1.6.8: 
+    - Ling:Light:0.69.26+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:Light_PluginInstaller:2.0.15+
+    - Ling:Light_UserDatabase:1.31.12+
+    - Ling:UniverseTools:1.22.27+
