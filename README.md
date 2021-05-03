@@ -44,6 +44,10 @@ Summary
 History Log
 =============
 
+- 1.6.10 -- 2021-05-03
+
+    - Update dependencies to Ling.Light_Logger (pushed by SubscribersUtil)
+
 - 1.6.9 -- 2021-03-05
 
     - update README.md, add install alternative
